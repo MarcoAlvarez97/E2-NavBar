@@ -19,8 +19,9 @@ img {
 
 /* Estilos para la barra de navegación */
 .navbar {
-  background-color: #333;
+  width: 100%;
   display: flex;
+  background-color: #333;
   justify-content: space-between; /* Alineación a la izquierda y la derecha */
   align-items: center; /* Centra verticalmente los elementos */
   padding: 1rem;
@@ -40,6 +41,8 @@ img {
   text-decoration: none; /*Quitamos la linea de abajo*/
   color: white;
   font-size: 1.5rem; /*Tamaño de letra*/
+  display: block;
+  text-align: center;
 }
 
 .navbar a:hover {
