@@ -2,16 +2,14 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1 rem = 10px */
 }
-*,
-*:before,
-*:after {
+* {
   margin: 0;
   padding: 0;
 }
 
 /* ajusto tamaño de Imagen */
 img {
-  margin-left: 2rem;
+  margin-left: 3rem;
   width: 5rem; /* Ajusto el tamaño */
   height: 5rem; /* Ajusto el tamaño */
   border-radius: 50%; /* Hace que la imagen sea redonda */
