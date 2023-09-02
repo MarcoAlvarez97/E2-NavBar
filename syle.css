@@ -29,11 +29,8 @@ img {
 .navbar ul {
   list-style-type: none; /*Quitamos los puntitos de la lista*/
   display: flex;
+  gap: 3rem;
   margin-right: 2.3rem;
-}
-
-.navbar li {
-  margin-left: 2rem; /* Espacio entre los elementos */
 }
 
 .navbar a {
