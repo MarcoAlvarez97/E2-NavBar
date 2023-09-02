@@ -29,6 +29,7 @@ img {
 .navbar ul {
   list-style-type: none; /*Quitamos los puntitos de la lista*/
   display: flex;
+  margin-right: 2.3rem;
 }
 
 .navbar li {
