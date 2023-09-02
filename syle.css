@@ -19,7 +19,6 @@ img {
 
 /* Estilos para la barra de navegación */
 .navbar {
-  width: 100%;
   display: flex;
   background-color: #333;
   justify-content: space-between; /* Alineación a la izquierda y la derecha */
