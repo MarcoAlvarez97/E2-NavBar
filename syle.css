@@ -9,6 +9,7 @@ html {
   padding: 0;
 }
 
+/* ajusto tamaño de Imagen */
 img {
   margin-left: 2rem;
   width: 5rem; /* Ajusto el tamaño */
@@ -26,7 +27,7 @@ img {
 }
 
 .navbar ul {
-  list-style-type: none;
+  list-style-type: none; /*Quitamos los puntitos de la lista*/
   display: flex;
 }
 
@@ -35,9 +36,9 @@ img {
 }
 
 .navbar a {
-  text-decoration: none;
+  text-decoration: none; /*Quitamos la linea de abajo*/
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /*Tamaño de letra*/
 }
 
 .navbar a:hover {
