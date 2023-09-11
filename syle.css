@@ -1,10 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,500;1,600;1,700&display=swap");
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1 rem = 10px */
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  /*TODO */
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 /* ajusto tamaño de Imagen */
@@ -41,4 +60,80 @@ img {
 
 .navbar a:hover {
   text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/*********** HERO **************/
+
+#hero {
+  margin-top: 3.125rem;
+  padding: 2rem 0;
+  max-width: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 4rem;
+  width: 80%;
+  font-weight: 800;
+  min-width: 31.25rem;
+  color: white;
+}
+
+.hero-info p {
+  font-size: 1.5rem;
+  width: 85%;
+  color: wheat;
+}
+
+/*----BOTON----*/
+.hero-info a {
+  border-radius: 0.625rem;
+  font-size: 1.5rem;
+  padding: 0.6rem 0;
+  width: 10rem;
+  text-align: center;
+  background: #20ac6d;
+  color: #000000;
+  font-weight: 600;
+}
+
+.hero-img img {
+  width: 42rem;
+  height: 35rem;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem;
 }
