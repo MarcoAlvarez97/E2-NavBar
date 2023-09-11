@@ -137,3 +137,53 @@ main {
   justify-content: center;
   gap: 1.8rem;
 }
+
+/********* SERVICIOS ********/
+
+#info {
+  padding: 4.375rem 0;
+  max-width: 75rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 5rem;
+}
+
+#info h2 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: whitesmoke;
+}
+.info-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.servicios {
+  width: 20rem;
+  height: 22rem;
+  padding: 3rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #bdc3c7;
+  border-radius: 0.625rem;
+  gap: 1.5rem;
+}
+
+.servicios h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.servicios p {
+  font-weight: 700;
+}
