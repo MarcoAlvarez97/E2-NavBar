@@ -25,6 +25,9 @@ html {
   text-decoration: none;
   list-style-type: none;
 }
+body {
+  font-size: 16px;
+}
 header {
   width: 100%;
   /* TODO: Acompaña la barra */
@@ -199,7 +202,7 @@ main {
 
 .servicios {
   width: 20rem;
-  height: 22rem;
+  height: 27rem;
   padding: 3rem 1.5rem;
 
   display: flex;
