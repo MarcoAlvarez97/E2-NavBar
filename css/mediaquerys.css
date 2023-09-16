@@ -1,0 +1,77 @@
+@media (max-width: 768px) {
+  .navbar {
+    gap: 1rem;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 6.5rem;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background: #1f4450;
+    border: 2px solid #19a6c9;
+    border-top: 0;
+    border-radius: 0px 0px 1.5rem 1.5rem;
+    padding: 4.5rem 3rem;
+    gap: 2.5rem;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar-list a {
+    font-size: 1.8rem;
+  }
+
+  .menu {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+
+  /**HERO**/
+
+  .hero-info {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .hero-info h1 {
+    width: 90%;
+    max-width: 50rem;
+    min-width: unset;
+  }
+
+  .hero-info p {
+    width: 60%;
+    max-width: 60rem;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  /**INFO**/
+
+  #info h2 {
+    text-align: center;
+    width: 80%;
+  }
+
+  .servicios {
+    max-width: 80%;
+  }
+}

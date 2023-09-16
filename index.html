@@ -7,33 +7,38 @@
       src="https://kit.fontawesome.com/360306b044.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" type="image/png" href="img/icono.jpeg" />
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <link rel="preload" href="css/mediaquerys.css" as="style" />
+    <link rel="stylesheet" href="css/mediaquerys.css" />
+
+    <title>WebWizarHub</title>
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <div>
-        <nav class="navbar">
-          <img src="img/icono.jpeg" alt="Icono" />
+      <img src="img/icono.jpeg" alt="Icono" class="logo" />
 
-          <!-- <label for="menu"><i class="fa-solid fa-bars"></i></label> 
-          <input type="checkbox" id="menu" />-->
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu">
+          <img src="img/menu.png" alt="menu" class="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
 
-          <ul>
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">NOSOTROS</a></li>
-            <li><a href="#">SERVICIOS</a></li>
-            <li><a href="#">CONTACTO</a></li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="navbar-list">
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">NOSOTROS</a></li>
+          <li><a href="#">SERVICIOS</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>

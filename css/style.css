@@ -30,13 +30,20 @@ body {
 }
 header {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5rem;
+  padding: 0 3rem;
+  background: linear-gradient(to bottom, #0f2027, #1f4450);
+
   /* TODO: Acompaña la barra */
   position: fixed;
   top: 0;
   z-index: 2;
 }
 /* ajusto tamaño de Imagen */
-img {
+.logo {
   margin-left: 3rem;
   width: 5rem; /* Ajusto el tamaño */
   height: 5rem; /* Ajusto el tamaño */
@@ -46,20 +53,19 @@ img {
 /* Estilos para la barra de navegación */
 .navbar {
   display: flex;
-  background-color: #333;
   justify-content: space-between; /* Alineación a la izquierda y la derecha */
   align-items: center; /* Centra verticalmente los elementos */
   padding: 1rem;
 }
 
-.navbar ul {
+.navbar-list {
   list-style-type: none; /*Quitamos los puntitos de la lista*/
   display: flex;
   gap: 3rem;
   margin-right: 2.3rem;
 }
 
-.navbar a {
+.navbar-list a {
   text-decoration: none; /*Quitamos la linea de abajo*/
   color: white;
   font-size: 1.5rem; /*Tamaño de letra*/
@@ -67,33 +73,8 @@ img {
   text-align: center;
 }
 
-.navbar a:hover {
+.navbar-list a:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 1rem;
-    margin-right: 0;
-    margin-top: 1rem;
-  }
-
-  .navbar a {
-    font-size: 1.2rem;
-  }
-
-  img {
-    margin: 0;
-    width: 3rem; /* Reducir el tamaño de la imagen */
-    height: 3rem; /* Reducir el tamaño de la imagen */
-  }
 }
 
 main {
@@ -104,16 +85,12 @@ main {
   width: 100%;
 }
 
-/** MENU HAMBURGUESA 
-.navbar i {
-  font-size: 3.6rem;
-  display: none;
-}
+/** MENU HAMBURGUESA **/
 
-#menu {
+#menu-toggle,
+.menu {
   display: none;
 }
-**/
 
 /*********** HERO **************/
 
@@ -127,6 +104,7 @@ main {
   background: #0f2027;
   background: -webkit-linear-gradient(to left, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to left, #2c5364, #203a43, #0f2027);
+  border-radius: 0.625rem;
 }
 
 .hero-info {
@@ -155,11 +133,12 @@ main {
   border-radius: 0.625rem;
   font-size: 1.5rem;
   padding: 0.6rem 0;
-  width: 10rem;
+  width: 12rem;
   text-align: center;
   background: #20ac6d;
+  text-transform: uppercase;
   color: #000000;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hero-img img {
