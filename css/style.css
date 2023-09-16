@@ -201,3 +201,21 @@ main {
 .servicios p {
   font-weight: 700;
 }
+
+/**** CONCTO ****/
+
+/********? FOOTER *******/
+
+footer {
+  width: 100%;
+  background: linear-gradient(to top, #0f2027, #1f4450);
+  margin: 0 auto;
+  padding: 2rem;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.copyright {
+  text-align: center;
+}
