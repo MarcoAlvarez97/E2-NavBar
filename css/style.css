@@ -220,6 +220,7 @@ main {
 }
 
 .info-contacto h3 {
+  margin-top: 2rem;
   font-size: 1.5rem;
   width: 80%;
   color: wheat;
