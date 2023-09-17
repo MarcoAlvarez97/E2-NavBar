@@ -74,4 +74,20 @@
   .servicios {
     max-width: 80%;
   }
+  /** CONTACTO **/
+
+  .info-contacto h2 {
+    width: 90%;
+    max-width: 50rem;
+    min-width: unset;
+  }
+
+  .datos {
+    width: 60%;
+    max-width: 60rem;
+  }
+
+  .contacto-imagen {
+    display: none;
+  }
 }

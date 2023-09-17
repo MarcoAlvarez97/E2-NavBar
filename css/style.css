@@ -101,7 +101,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0f2027;
   background: -webkit-linear-gradient(to left, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to left, #2c5364, #203a43, #0f2027);
   border-radius: 0.625rem;
@@ -203,14 +202,59 @@ main {
 }
 
 /**** CONCTO ****/
+#contacto {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  max-width: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-contacto h2 {
+  font-size: 2rem;
+  width: 80%;
+  font-weight: 800;
+  min-width: 31.25rem;
+  color: white;
+}
+
+.info-contacto h3 {
+  font-size: 1.5rem;
+  width: 80%;
+  color: wheat;
+  font-weight: 600;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.datos p {
+  font-size: 1.5rem;
+  width: 85%;
+  color: wheat;
+}
+
+.contacto-imagen img {
+  width: 40rem;
+  height: 30rem;
+  padding: 2rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem;
+}
 
 /********? FOOTER *******/
 
 footer {
   width: 100%;
   background: linear-gradient(to top, #0f2027, #1f4450);
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   color: #ffffff;
   font-weight: 400;
   font-size: 1.8rem;
