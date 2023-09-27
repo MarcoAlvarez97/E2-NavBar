@@ -1,0 +1,175 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+
+/** NAVBAR **/
+
+.navbar-list li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-list li a::after {
+  content: "";
+  height: 0.2rem;
+  width: 100%;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+/*?HERO */
+
+.hero-info a {
+  transition: all 0.5s ease-out;
+}
+
+.hero-info a:hover {
+  background-color: var(--sombreado);
+  transition: all 0.2s ease-in;
+}
+
+/* KEY */
+
+@keyframes slide-down {
+  from {
+    transform: translateY(10rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(10rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(10rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-10rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/** HERO **/
+
+.hero-info h1 {
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+}
+
+.hero-info p {
+  opacity: 0;
+
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation-delay: 0.3s;
+}
+
+.hero-info a {
+  opacity: 0;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation-delay: 0.4s;
+}
+
+.hero-img {
+  opacity: 0;
+  animation: fade 1s ease-in forwards, slide-right 1.3s ease-in-out;
+  animation-delay: 0.2s;
+}
+
+/** INFO **/
+
+#info h2 {
+  opacity: 0;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation-delay: 0.4s;
+}
+
+.servicios {
+  opacity: 0;
+  animation: fade 0.8s ease-in forwards, slide-up 1.3s ease-in-out;
+}
+
+.servicios:nth-child(1) {
+  animation-delay: 0.8s;
+}
+.servicios:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.servicios:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.servicios {
+  transition: all 0.3s linear;
+}
+
+.servicios:hover {
+  transform: scale(1.08);
+  transition: all 0.3s linear;
+}
+
+/** CONTACO **/
+
+.contacto-imagen {
+  opacity: 0;
+  animation: fade 1s ease-in forwards, slide-right 1.3s ease-in-out;
+  animation-delay: 0.2s;
+}
+
+.info-contacto {
+  opacity: 0;
+
+  animation: fade 0.8s ease-in forwards, slide-left 0.9s ease-in-out;
+  animation-delay: 0.3s;
+}
+
+.datos p,
+.datos h3 {
+  transition: all 0.3s linear;
+}
+
+.datos p:hover {
+  transform: scale(1.08);
+  transition: all 0.3s linear;
+}
+
+.datos h3:hover {
+  transform: scale(1.05);
+  transition: all 0.3s linear;
+}
