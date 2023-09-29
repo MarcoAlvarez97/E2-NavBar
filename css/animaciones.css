@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 10rem;
 }
+/** HEADER **/
+
+.logo {
+  transition: all 0.5s linear;
+}
+
+.logo:hover {
+  transform: scale(1.3);
+  transition: all 0.5s linear;
+}
 
 /** NAVBAR **/
 
@@ -32,12 +42,12 @@ html {
 /*?HERO */
 
 .hero-info a {
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease;
 }
 
 .hero-info a:hover {
   background-color: var(--sombreado);
-  transition: all 0.2s ease-in;
+  transition: all 0.5s ease;
 }
 
 /* KEY */
